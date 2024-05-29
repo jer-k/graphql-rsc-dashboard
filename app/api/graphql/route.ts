@@ -5,15 +5,22 @@ import { gql } from "graphql-tag";
 
 import { books } from "@/data/books";
 
+async function delayedBooks() {
+  await new Promise((res) => setTimeout(res, 1000));
+  return books;
+}
+
 const resolvers = {
   Query: {
     books: () => books,
+    delayedBooks: delayedBooks,
   },
 };
 
 const typeDefs = gql`
   type Query {
     books: [Book!]!
+    delayedBooks: [Book!]!
   }
 
   type Author {

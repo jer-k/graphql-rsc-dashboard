@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "@apollo/client": "^3.10.4",
-    "@apollo/experimental-nextjs-app-support": "^0.10.1",
+    "@apollo/experimental-nextjs-app-support": "^0.11.0",
     "@apollo/server": "^4.10.4",
     "@as-integrations/next": "^3.0.0",
     "graphql-tag": "^2.12.6",
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "^15.0.0-rc.0",
+    "react": "^19.0.0-rc-6f23540c7d-20240528",
+    "react-dom": "^19.0.0-rc-6f23540c7d-20240528"
   },
   "devDependencies": {
     "@types/node": "^20",
