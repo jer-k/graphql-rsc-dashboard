@@ -8,17 +8,12 @@ import { books } from "@/data/books";
 async function shortDelayedBooks(first: any, options: { offset?: number; limit?: number }) {
   await new Promise((res) => setTimeout(res, 200));
 
-  console.log("what is first, second", first, options);
-
   const { offset, limit } = options;
-
-  console.log("what is offset, limit", offset, limit);
 
   let paginatedBooks = books;
   if (typeof offset !== "undefined" && typeof limit !== "undefined") {
     const start = offset * limit;
     const end = start + limit;
-    console.log("what is start and end?", start, end);
     paginatedBooks = books.slice(start, end);
   }
 
