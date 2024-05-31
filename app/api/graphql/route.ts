@@ -5,7 +5,27 @@ import { gql } from "graphql-tag";
 
 import { books } from "@/data/books";
 
-async function delayedBooks() {
+async function shortDelayedBooks(first: any, options: { offset?: number; limit?: number }) {
+  await new Promise((res) => setTimeout(res, 200));
+
+  console.log("what is first, second", first, options);
+
+  const { offset, limit } = options;
+
+  console.log("what is offset, limit", offset, limit);
+
+  let paginatedBooks = books;
+  if (typeof offset !== "undefined" && typeof limit !== "undefined") {
+    const start = offset * limit;
+    const end = start + limit;
+    console.log("what is start and end?", start, end);
+    paginatedBooks = books.slice(start, end);
+  }
+
+  return paginatedBooks;
+}
+
+async function longDelayedBooks() {
   await new Promise((res) => setTimeout(res, 1000));
   return books;
 }
@@ -13,14 +33,16 @@ async function delayedBooks() {
 const resolvers = {
   Query: {
     books: () => books,
-    delayedBooks: delayedBooks,
+    shortDelayedBooks: shortDelayedBooks,
+    longDelayedBooks: longDelayedBooks,
   },
 };
 
 const typeDefs = gql`
   type Query {
     books: [Book!]!
-    delayedBooks: [Book!]!
+    shortDelayedBooks(offset: Int, limit: Int): [Book!]!
+    longDelayedBooks: [Book!]!
   }
 
   type Author {

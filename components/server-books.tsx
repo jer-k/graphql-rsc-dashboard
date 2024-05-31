@@ -5,7 +5,7 @@ import { getClient } from "@/lib/ApolloClient";
 
 const DELAYED_BOOKS_QUERY = gql`
   query DelayedBooksQuery {
-    delayedBooks {
+    longDelayedBooks {
       id
       title
       dateAdded
@@ -19,5 +19,5 @@ const DELAYED_BOOKS_QUERY = gql`
 
 export async function ServerBooks() {
   const { data } = await getClient().query({ query: DELAYED_BOOKS_QUERY });
-  return <Books books={data.delayedBooks} />;
+  return <Books books={data.longDelayedBooks} />;
 }
