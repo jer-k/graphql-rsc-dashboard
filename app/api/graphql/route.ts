@@ -5,6 +5,13 @@ import { gql } from "graphql-tag";
 
 import { books } from "@/data/books";
 
+async function shortDelayedFindBook(first: any, options: { isbn: string }) {
+  await new Promise((res) => setTimeout(res, 200));
+
+  const { isbn } = options;
+  return books.find((book) => book.isbn === isbn);
+}
+
 async function shortDelayedBooks(first: any, options: { offset?: number; limit?: number }) {
   await new Promise((res) => setTimeout(res, 200));
 
@@ -27,6 +34,7 @@ async function longDelayedBooks() {
 
 const resolvers = {
   Query: {
+    book: shortDelayedFindBook,
     books: () => books,
     shortDelayedBooks: shortDelayedBooks,
     longDelayedBooks: longDelayedBooks,
@@ -35,6 +43,7 @@ const resolvers = {
 
 const typeDefs = gql`
   type Query {
+    book(isbn: String!): Book
     books: [Book!]!
     shortDelayedBooks(offset: Int, limit: Int): [Book!]!
     longDelayedBooks: [Book!]!
@@ -77,7 +86,7 @@ const loggingPlugin = {
 const server = new ApolloServer({
   resolvers,
   typeDefs,
-  plugins: [loggingPlugin],
+  // plugins: [loggingPlugin],
 });
 
 const handler = startServerAndCreateNextHandler<NextRequest>(server, {

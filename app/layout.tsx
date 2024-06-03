@@ -12,15 +12,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  breadcrumbs,
   children,
 }: Readonly<{
+  breadcrumbs: React.ReactNode;
   children: React.ReactNode;
 }>) {
+  console.log("rendering the layout");
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className}`}>
         <div className="bg-white px-10 py-4 h-full w-full">
           <Header />
+          {breadcrumbs}
           {children}
         </div>
       </body>

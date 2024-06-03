@@ -7,13 +7,13 @@ export function Header() {
         Home
       </Link>
       <Link className="text-black" href="/books">
-        RSC
+        RSC (No Delay)
       </Link>
       <Link className="text-black" href="/delayed_books">
-        RSC Long Delay
+        RSC (Long Delay)
       </Link>
       <Link className="text-black" href="/paginated_books">
-        RSC Pagination
+        RSC Pagination ( Short Delay)
       </Link>
     </div>
   );
