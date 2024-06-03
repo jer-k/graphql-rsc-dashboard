@@ -8,6 +8,7 @@ type Props = {
   };
 };
 
+export const dynamic = "force-dynamic";
 export default async function BooksPage({ params: { isbn } }: Props) {
   return (
     <>

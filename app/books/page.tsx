@@ -17,6 +17,7 @@ const BOOKS_QUERY = gql`
   }
 `;
 
+export const dynamic = "force-dynamic";
 export default async function BooksPage() {
   const { data } = await getClient().query({ query: BOOKS_QUERY });
 

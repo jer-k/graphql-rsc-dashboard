@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { ServerBooks } from "@/components/server-books";
 
+export const dynamic = "force-dynamic";
 export default async function BooksPage() {
   return (
     <>
