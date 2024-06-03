@@ -2,7 +2,9 @@ import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
 import { registerApolloClient } from "@apollo/experimental-nextjs-app-support/rsc";
 
 export const { getClient } = registerApolloClient(() => {
-  const apollo_uri = (process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`) || "http://localhost:6001/api/graphql";
+  const apollo_uri =
+    (process.env.NEXT_PUBLIC_VERCEL_URL && `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`) ||
+    "http://localhost:6001/api/graphql";
   return new ApolloClient({
     cache: new InMemoryCache(),
     link: new HttpLink({
