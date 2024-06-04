@@ -3,7 +3,7 @@ import { registerApolloClient } from "@apollo/experimental-nextjs-app-support/rs
 
 export const { getClient } = registerApolloClient(() => {
   const apollo_uri =
-    (process.env.NEXT_PUBLIC_VERCEL_URL && `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`) ||
+    (process.env.NEXT_PUBLIC_VERCEL_URL && `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/graphql`) ||
     "http://localhost:6001/api/graphql";
   return new ApolloClient({
     cache: new InMemoryCache(),
