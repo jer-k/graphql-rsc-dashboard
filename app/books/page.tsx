@@ -1,7 +1,7 @@
 import { gql } from "graphql-tag";
 
 import { Books } from "@/components/books";
-import { getClient } from "@/lib/ApolloClient";
+import { getClient } from "@/graphql/client";
 
 const BOOKS_QUERY = gql`
   query BooksQuery {

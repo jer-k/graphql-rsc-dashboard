@@ -1,5 +1,5 @@
 import { gql } from "graphql-tag";
-import { getClient } from "@/lib/ApolloClient";
+import { getClient } from "@/graphql/client";
 
 import Link from "next/link";
 
@@ -24,7 +24,9 @@ export async function BookBreadcrumb({ href, isbn, isItem }: Props) {
     variables: { isbn: isbn },
   });
 
-  const bookTitle = data.book.title;
+  const bookTitle = data?.book?.title;
+
+  if (!bookTitle) return null;
 
   return isItem ? (
     <>

@@ -4,7 +4,9 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import { ApolloWrapper } from "@/graphql/wrapper";
 import { Header } from "@/components/header";
+import { DeferredHeader } from "@/components/deferred-header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,15 +20,16 @@ export default function RootLayout({
   breadcrumbs: React.ReactNode;
   children: React.ReactNode;
 }>) {
-  console.log("rendering the layout");
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <div className="bg-white px-10 py-4 h-full w-full">
-          <Header />
-          {breadcrumbs}
-          {children}
-        </div>
+        <ApolloWrapper>
+          <div className="bg-white px-10 py-4 h-full w-full">
+            <Header />
+            <DeferredHeader />
+            {children}
+          </div>
+        </ApolloWrapper>
       </body>
     </html>
   );

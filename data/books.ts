@@ -16,6 +16,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGPgYWS1UVfmYWRlqA6x+/90SaaHJUOUo/H/g21u+moMgvy8EuJCYqLCAMT1CYV6y8gRAAAAAElFTkSuQmCC",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2014,
@@ -34,6 +60,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMUlEQVR4nGNgcC9kCK1i0E9gYIjoYDBJYZD0YmDwLBcrmJu7/SkDg1+7Uc2Wfd//AwC+MQzJdYlOYAAAAABJRU5ErkJggg==",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2013,
@@ -52,6 +104,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMUlEQVR4nGPYsaLp//+Pe1Y2MCxu85rT5F0U4cBQ6ClhpCIWaSfC4KDEwMXAEOWoCgByNA2yhZcgPwAAAABJRU5ErkJggg==",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2012,
@@ -70,6 +148,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/AKGVhpiAcMCihgAgAABUNho/IwIA//i4/+Wg/+KlAKyac7Sje7akf2J2E3KzygNIAAAAAElFTkSuQmCC",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2005,
@@ -88,6 +192,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/AOPk5Pr+/t7j4wC5uLUMAADCwr4AwsG9HBcJx8S+AOHh4fD09Njb2wDKGYho9r4mAAAAAElFTkSuQmCC",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2004,
@@ -106,6 +236,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/ACMMAGtfSjMkEQDu7eC9vrf8++0A2trQra6l5ufYAPTx2BYEAPn23YTYFklb2i3iAAAAAElFTkSuQmCC",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 2003,
@@ -124,6 +280,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMUlEQVR4nGPwSWa49lYvp5WBYd42hjf/nSx8GBhyexhKpzNw8TMwyGgxBDYzKNgxAAAQ/AstPtK5OwAAAABJRU5ErkJggg==",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 1994,
@@ -142,6 +324,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMUlEQVR4nGP4+vJifUm0ihwXw/8vN04vbbeyUGb4vW3m7+XtRUEODH1y4k4KCmwsLACKjBBr8WIw/wAAAABJRU5ErkJggg==",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 1993,
@@ -160,6 +368,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/AHqFVf/52tzAngB7hF3v0bHiuJwAjIJdt5Fpu4NfAEULAEAAADEAAL1+Ed7HObsSAAAAAElFTkSuQmCC",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 1991,
@@ -178,6 +412,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/AKd+cuTq68rKxwBYWDfU2tjt7OwAK0Upvb696enqAAASAIhpafr9+tcRFsiW7K5+AAAAAElFTkSuQmCC",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 1990,
@@ -193,6 +453,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMUlEQVR4nGP431X9/9qx/+2lDBkMTGYMDKVcwgyZmupd5WUHS/MZvnjY/c+I/O5lDwBYEhBcAil0CAAAAABJRU5ErkJggg==",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 1989,
@@ -208,6 +494,32 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMUlEQVR4nGP4H2z0Py/ov7saw5M4t//PLv2fUsbgyMAQY6x1yMuc4SADw3IGhpMMDABwMQ9mldHuwgAAAABJRU5ErkJggg==",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 1982,
@@ -226,5 +538,31 @@ export const books = [
       w: 50,
       b64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMUlEQVR4nGP49uDE/x+P/7+/ztAzY3pmXUdu60QGJRVlBl4VTjV9BllpVVUZEQExSQCpNw7UGm4kGwAAAABJRU5ErkJggg==",
     },
+    stores: [
+      {
+        name: "First Store",
+        address: "123 Main Street",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+      {
+        name: "Second Store",
+        address: "567 1st Ave",
+        managers: [
+          {
+            name: "Fun Manager",
+          },
+          {
+            name: "Happy Manager",
+          },
+        ],
+      },
+    ],
   },
 ];

@@ -1,4 +1,4 @@
-import type { Book as BookType } from "@/types";
+import type { Book as BookType } from "@/types/graphql";
 
 import { Book } from "@/components/book";
 

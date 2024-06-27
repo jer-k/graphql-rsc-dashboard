@@ -1,5 +1,5 @@
 import { gql } from "graphql-tag";
-import { getClient } from "@/lib/ApolloClient";
+import { getClient } from "@/graphql/client";
 
 import { Book } from "@/components/book";
 

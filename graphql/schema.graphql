@@ -1,0 +1,29 @@
+type Query {
+    book(isbn: String!): Book
+    books: [Book!]!
+    shortDelayedBooks(offset: Int, limit: Int): [Book!]!
+    longDelayedBooks: [Book!]!
+}
+
+type Author {
+    name: String!
+}
+
+type Book {
+    id: ID!
+    dateAdded: String!
+    title: String!
+    isbn: String!
+    author: Author
+    stores: [Store!]
+}
+
+type Manager {
+    name: String!
+}
+
+type Store {
+    address: String!
+    name: String!
+    managers: [Manager]
+}

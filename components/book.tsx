@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import type { Book as BookType } from "@/types";
+import type { Book as BookType } from "@/types/graphql";
 
 type Props = {
   book: BookType;
