@@ -25,5 +25,5 @@ type Manager {
 type Store {
     address: String!
     name: String!
-    managers: [Manager]
+    managers: [Manager!]
 }

@@ -14,8 +14,10 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  */
 const documents = {
     "\n  query BooksQuery {\n    books {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n    }\n  }\n": types.BooksQueryDocument,
-    "\n  query DEFERRED_BOOKS_ONE_QUERY {\n    books {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n": types.Deferred_Books_One_QueryDocument,
     "\n  query BookBreadcrumbQuery($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n    }\n  }\n": types.BookBreadcrumbQueryDocument,
+    "\n  query BOOKS_DEFERRED_STORES_MANAGERS_QUERY($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n          managers {\n            name\n          }\n        }\n      }\n    }\n  }\n": types.Books_Deferred_Stores_Managers_QueryDocument,
+    "\n  query BOOKS_DEFERRED_STORES_QUERY($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n": types.Books_Deferred_Stores_QueryDocument,
+    "\n  query DEFERRED_BOOKS_ONE_QUERY {\n    books {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n": types.Deferred_Books_One_QueryDocument,
     "\n  query BookQuery($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n    }\n  }\n": types.BookQueryDocument,
     "\n  query ServerPaginatedBooksQuery($offset: Int, $limit: Int) {\n    shortDelayedBooks(offset: $offset, limit: $limit) {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n    }\n  }\n": types.ServerPaginatedBooksQueryDocument,
     "\n  query DelayedBooksQuery {\n    longDelayedBooks {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n    }\n  }\n": types.DelayedBooksQueryDocument,
@@ -42,11 +44,19 @@ export function graphql(source: "\n  query BooksQuery {\n    books {\n      id\n
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "\n  query DEFERRED_BOOKS_ONE_QUERY {\n    books {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n"): (typeof documents)["\n  query DEFERRED_BOOKS_ONE_QUERY {\n    books {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n"];
+export function graphql(source: "\n  query BookBreadcrumbQuery($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n    }\n  }\n"): (typeof documents)["\n  query BookBreadcrumbQuery($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n    }\n  }\n"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "\n  query BookBreadcrumbQuery($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n    }\n  }\n"): (typeof documents)["\n  query BookBreadcrumbQuery($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n    }\n  }\n"];
+export function graphql(source: "\n  query BOOKS_DEFERRED_STORES_MANAGERS_QUERY($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n          managers {\n            name\n          }\n        }\n      }\n    }\n  }\n"): (typeof documents)["\n  query BOOKS_DEFERRED_STORES_MANAGERS_QUERY($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n          managers {\n            name\n          }\n        }\n      }\n    }\n  }\n"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "\n  query BOOKS_DEFERRED_STORES_QUERY($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n"): (typeof documents)["\n  query BOOKS_DEFERRED_STORES_QUERY($isbn: String!) {\n    book(isbn: $isbn) {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "\n  query DEFERRED_BOOKS_ONE_QUERY {\n    books {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n"): (typeof documents)["\n  query DEFERRED_BOOKS_ONE_QUERY {\n    books {\n      id\n      title\n      dateAdded\n      isbn\n      author {\n        name\n      }\n      ... @defer {\n        stores {\n          name\n          address\n        }\n      }\n    }\n  }\n"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
