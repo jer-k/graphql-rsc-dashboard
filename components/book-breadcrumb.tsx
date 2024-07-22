@@ -1,5 +1,5 @@
 import { gql } from "graphql-tag";
-import { getClient } from "@/graphql/client";
+import { getClient } from "@/graphql/rsc-client";
 
 import Link from "next/link";
 

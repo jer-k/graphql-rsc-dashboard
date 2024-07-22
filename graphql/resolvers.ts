@@ -2,7 +2,6 @@ import { books } from "@/data/books";
 import { Book } from "@/types/graphql";
 
 async function shortDelayedFindBook(first: any, options: { isbn: string }) {
-  console.log("inside the short delayed book resolver, before await");
   await new Promise((res) => setTimeout(res, 200));
 
   const { isbn } = options;
@@ -38,8 +37,7 @@ const resolvers = {
   },
   Book: {
     stores: async (book: Book, _: unknown, __: unknown) => {
-      console.log("inside the stores resolver, before await");
-      await new Promise((res) => setTimeout(res, 2000));
+      await new Promise((res) => setTimeout(res, 1000));
       return book.stores;
     },
   },

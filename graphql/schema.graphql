@@ -6,6 +6,7 @@ type Query {
 }
 
 type Author {
+    id: ID!
     name: String!
 }
 
@@ -19,11 +20,24 @@ type Book {
 }
 
 type Manager {
+    id: ID!
     name: String!
 }
 
 type Store {
+    id: ID!
     address: String!
     name: String!
+    hours: StoreHours!
     managers: [Manager!]
+}
+
+type StoreHours {
+    monday: String!
+    tuesday: String!
+    wednesday: String!
+    thursday: String!
+    friday: String!
+    saturday: String!
+    sunday: String!
 }

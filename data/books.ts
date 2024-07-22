@@ -4,6 +4,7 @@ export const books = [
     dateAdded: "2024-05-05 03:08:03",
     title: "GODEL ESCHER BACH : ETERNAL GOLDEN BRAID / 20TH ANNIVERSARY ED",
     author: {
+      id: 100,
       name: "Hofstadter, Douglas R.",
     },
     isbn: "9780465026562",
@@ -18,25 +19,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -48,6 +73,7 @@ export const books = [
     dateAdded: "2024-05-05 03:07:03",
     title: "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution",
     author: {
+      id: 101,
       name: "Isaacson, Walter",
     },
     isbn: "9781476708706",
@@ -62,25 +88,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -92,6 +142,7 @@ export const books = [
     dateAdded: "2024-05-05 03:06:03",
     title: "The Education of Henry Adams",
     author: {
+      id: 102,
       name: "Adams, Henry",
     },
     isbn: "9780679640103",
@@ -106,25 +157,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -136,6 +211,7 @@ export const books = [
     dateAdded: "2024-05-05 03:04:03",
     title: "Winning Independence: The Decisive Years of the Revolutionary War, 1778-1781",
     author: {
+      id: 102,
       name: "Ferling, John",
     },
     isbn: "9781635572766",
@@ -150,25 +226,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -180,6 +280,7 @@ export const books = [
     dateAdded: "2024-03-30 03:48:04",
     title: "The Lying Stones of Marrakech: Penultimate Reflections in Natural History",
     author: {
+      id: 103,
       name: "Gould, Stephen Jay",
     },
     isbn: "9780609601426",
@@ -194,20 +295,42 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
             name: "Fun Manager",
@@ -224,6 +347,7 @@ export const books = [
     dateAdded: "2024-04-02 05:44:05",
     title: "The Power of Babel: A Natural History of Language",
     author: {
+      id: 104,
       name: "McWhorter, John",
     },
     isbn: "9780060520854",
@@ -238,13 +362,25 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -252,11 +388,22 @@ export const books = [
       {
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -268,6 +415,7 @@ export const books = [
     dateAdded: "2024-04-02 05:44:05",
     title: "The Seventies: The Great Shift In American Culture, Society, And Politics",
     author: {
+      id: 105,
       name: "Bruce J. Schulman",
     },
     isbn: "9780306811265",
@@ -282,25 +430,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -312,6 +484,7 @@ export const books = [
     dateAdded: "2024-03-30 03:32:05",
     title: "Beethoven: The Universal Composer (Eminent Lives)",
     author: {
+      id: 106,
       name: "Morris, Edmund",
     },
     isbn: "9780060759742",
@@ -326,25 +499,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -356,6 +553,7 @@ export const books = [
     dateAdded: "2024-03-30 03:32:05",
     title: "Machiavelli: Philosopher of Power (Eminent Lives)",
     author: {
+      id: 107,
       name: "King, Ross",
     },
     isbn: "9780060817176",
@@ -370,25 +568,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -400,6 +622,7 @@ export const books = [
     dateAdded: "2024-03-30 03:18:05",
     title: "Finite and Infinite Games",
     author: {
+      id: 108,
       name: "Carse, James",
     },
     isbn: "9781476731711",
@@ -414,25 +637,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -455,25 +702,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -496,25 +767,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
@@ -526,6 +821,7 @@ export const books = [
     dateAdded: "2024-02-27 20:50:04",
     title: "The American Museum of Natural History and How It Got That Way",
     author: {
+      id: 109,
       name: "Davey, Colin",
     },
     isbn: "9780823289639",
@@ -540,25 +836,49 @@ export const books = [
     },
     stores: [
       {
+        id: 5001,
         name: "First Store",
         address: "123 Main Street",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],
       },
       {
+        id: 5002,
         name: "Second Store",
         address: "567 1st Ave",
+        hours: {
+          monday: "all-day",
+          tuesday: "all-day",
+          wednesday: "all-day",
+          thursday: "all-day",
+          friday: "all-day",
+          saturday: "all-day",
+          sunday: "all-day",
+        },
         managers: [
           {
+            id: 6001,
             name: "Fun Manager",
           },
           {
+            id: 6002,
             name: "Happy Manager",
           },
         ],

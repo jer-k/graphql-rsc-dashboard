@@ -1,7 +1,7 @@
 import { gql } from "graphql-tag";
 
 import { Books } from "@/components/books";
-import { getClient } from "@/graphql/client";
+import { getClient } from "@/graphql/rsc-client";
 import Link from "next/link";
 
 const SERVER_PAGINATED_BOOKS_QUERY = gql`

@@ -1,4 +1,4 @@
-import { startServerAndCreateNextHandler } from "@as-integrations/next";
+import { startServerAndCreateNextHandler } from "@as-integrations/next/src/";
 import { NextRequest } from "next/server";
 
 import { server } from "@/graphql/server";
