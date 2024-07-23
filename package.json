@@ -10,7 +10,7 @@
     "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
-    "@apollo/client": "^3.10.4",
+    "@apollo/client": "3.11.1",
     "@apollo/experimental-nextjs-app-support": "^0.11.1",
     "@apollo/server": "^4.10.4",
     "@as-integrations/next": "file:../apollo-server-integration-next",
@@ -19,8 +19,8 @@
     "graphql-tag": "^2.12.6",
     "lodash": "^4.17.21",
     "next": "^15.0.0-rc.0",
-    "react": "^19.0.0-rc-6f23540c7d-20240528",
-    "react-dom": "^19.0.0-rc-6f23540c7d-20240528"
+    "react": "19.0.0-rc-f6cce072-20240723",
+    "react-dom": "19.0.0-rc-f6cce072-20240723"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "5.0.2",
