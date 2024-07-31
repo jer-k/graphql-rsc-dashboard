@@ -4,7 +4,7 @@ import { gql } from "graphql-tag";
 
 import { useQuery } from "@apollo/client";
 
-const BOOKS_DEFERRED_STORES_MANAGERS_QUERY = gql`
+const BOOKS_STORES_MANAGERS_QUERY = gql`
   query BOOKS_DEFERRED_STORES_MANAGERS_QUERY($isbn: String!) {
     book(isbn: $isbn) {
       id
@@ -15,24 +15,22 @@ const BOOKS_DEFERRED_STORES_MANAGERS_QUERY = gql`
         id
         name
       }
-      ... @defer {
-        stores {
+      stores {
+        id
+        name
+        address
+        hours {
+          monday
+          tuesday
+          wednesday
+          thursday
+          friday
+          saturday
+          sunday
+        }
+        managers {
           id
           name
-          address
-          hours {
-            monday
-            tuesday
-            wednesday
-            thursday
-            friday
-            saturday
-            sunday
-          }
-          managers {
-            id
-            name
-          }
         }
       }
     }
@@ -48,8 +46,7 @@ type Props = {
 };
 
 export function ClientBookStoresManagers({ isbn }: Props) {
-  console.log("___________________________________\n\n\n\n\n");
-  const { data, loading, error } = useQuery(BOOKS_DEFERRED_STORES_MANAGERS_QUERY, {
+  const { data, loading, error } = useQuery(BOOKS_STORES_MANAGERS_QUERY, {
     variables: { isbn },
     fetchPolicy: "cache-and-network",
   });

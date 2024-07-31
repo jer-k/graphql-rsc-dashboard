@@ -13,7 +13,7 @@
     "@apollo/client": "3.11.1",
     "@apollo/experimental-nextjs-app-support": "^0.11.1",
     "@apollo/server": "^4.10.4",
-    "@as-integrations/next": "file:../apollo-server-integration-next",
+    "@as-integrations/next": "^3.1.0",
     "deepmerge": "^4.3.1",
     "graphql": "v17.0.0-alpha.2",
     "graphql-tag": "^2.12.6",

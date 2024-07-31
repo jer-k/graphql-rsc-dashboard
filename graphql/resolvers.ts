@@ -37,7 +37,7 @@ const resolvers = {
   },
   Book: {
     stores: async (book: Book, _: unknown, __: unknown) => {
-      await new Promise((res) => setTimeout(res, 1000));
+      await new Promise((res) => setTimeout(res, 2000));
       return book.stores;
     },
   },
